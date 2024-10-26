@@ -22,7 +22,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [click here](https://github.com/BS-Joy/fm-Easybank-landing-page)
-- Live Site URL: [click here](https://bs-joy.github.io/fm-Easybank-landing-page/)
+- Live Site URL: [click here](https://easybankbs.netlify.app/)
 
 ### Built with
 
