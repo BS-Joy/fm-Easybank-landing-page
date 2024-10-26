@@ -1,0 +1,130 @@
+.hero__section {
+  margin-bottom: 5.5rem;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-color: #fafafa;
+}
+
+.hero__container {
+  width: 100%;
+}
+
+.hero__image {
+  height: 18.75rem;
+  background-image: url("/images/bg-intro-mobile.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-inline: 0.0875rem;
+}
+
+.hero__image img {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 23.5rem;
+  transform: translateY(-7.5rem);
+  padding-inline: 1rem;
+}
+
+.hero__text {
+  margin-top: 6.8dvw;
+  width: 80%;
+  margin-inline: auto;
+}
+
+.hero__text h1 {
+  margin-bottom: 1rem;
+  font-size: 2.2rem;
+  font-weight: 300;
+  line-height: 3rem;
+  letter-spacing: -0.0437rem;
+  color: var(--color-dark-blue);
+}
+
+.hero__text p {
+  margin-bottom: 2rem;
+  font-size: 14px;
+  line-height: 1.5625rem;
+  letter-spacing: -0.015rem;
+  color: var(--color-grayish-blue);
+}
+
+/* mid */
+@media (min-width: 580px) {
+  .hero__image img {
+    max-width: 30rem;
+  }
+
+  .hero__text {
+    margin-top: 12rem;
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .hero__section {
+    position: relative;
+    margin-bottom: 0;
+    height: 41rem;
+    background-image: url("/images/bg-intro-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: right -40rem top -16.25rem;
+    padding-inline: 2.5rem;
+  }
+
+  .hero__image {
+    position: absolute;
+    right: -12rem;
+    top: -3rem;
+    height: auto;
+    background-image: none;
+    padding: 0;
+  }
+
+  .hero__image img {
+    max-width: 85%;
+    transform: translateY(0);
+  }
+
+  .hero__text {
+    margin: 0;
+    width: 40%;
+    padding-left: 10%;
+    text-align: start;
+  }
+
+  .hero__text h1 {
+    margin-bottom: 1.5rem;
+    font-size: 3.5rem;
+    line-height: 4rem;
+  }
+
+  .hero__text p {
+    margin-bottom: 2.25rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+/* lgplus */
+@media (min-width: 1240px) {
+  .hero__section {
+    height: 45rem;
+    background-position: right -28.5rem top -16.25rem;
+  }
+
+  .hero__image {
+    right: -9.2rem;
+    top: -7.6rem;
+  }
+
+  .hero__image img {
+    max-width: none;
+  }
+
+  .hero__text {
+    padding-left: 8%;
+  }
+}
