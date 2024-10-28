@@ -100,7 +100,6 @@ ul a {
 @media (min-width: 900px) {
   .header {
     height: 80px;
-    /* padding-inline: 5rem; */
   }
   .nav__links ul {
     display: flex;
@@ -114,7 +113,6 @@ ul a {
     display: none;
   }
 
-  /* Ensure mobile nav and close button are hidden on larger screens */
   .mobile__nav__links,
   #close__nav {
     display: none;
@@ -138,9 +136,10 @@ ul a {
 
   .nav__links ul li a {
     color: var(--color-grayish-blue);
+    transition: all 0.5s ease;
   }
 
-  .nav__links ul li a:hover::after {
+  .nav__links ul li a::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -149,20 +148,15 @@ ul a {
     height: 3px;
     border-width: 2px;
     background: var(--button-gradient);
+    opacity: 0;
+    transition: 0.5s ease;
+  }
+
+  .nav__links ul li a:hover::after {
+    opacity: 1;
   }
 
   .nav__links ul li a:hover {
     color: var(--color-dark-blue);
   }
 }
-
-@keyframes hoverAnimation {
-  0% {
-  }
-}
-/* 
-@media (min-width: 950px) {
-  .header {
-    padding-inline: 10rem;
-  }
-} */

@@ -48,6 +48,12 @@
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 0.4rem;
+  transition: all 0.5s ease;
+}
+
+.article__texts h3:hover {
+  color: var(--color-lime-green);
+  cursor: pointer;
 }
 
 .article__texts p {
